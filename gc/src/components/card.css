@@ -1,0 +1,258 @@
+ .login{
+     height: 500px;width: 350px;
+     position: relative;
+     left: 450px;
+     top: 100px;
+     bottom: 100px;
+     border: 1px solid black;
+     background-image: url(https://www.alll.com/wp-content/uploads/2019/01/signup-background2-1024x576.jpg);
+     border-radius: 10px;
+     
+ }
+.login h1{
+    align-items: center; display: flex; justify-content: center;
+    padding-top: 20px;
+    font-size: 30px;
+    color: wheat;
+}
+.login img{
+    height: 40px;
+    width: 150px;
+    position: relative;
+    left: 100px;
+   margin-top: 6px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.login input{
+  position: relative;
+  left: 50px;
+  top: 50px;
+  margin: 10px;
+padding-top: 6px;
+padding-bottom: 6px;
+padding-left: 5px;
+padding-right: 80px;
+border-radius: 50px;
+border:none;
+}
+.p1{
+    position: relative;
+    left: 50px;
+    color: #fff;
+    font-size: 12px;
+    padding-top: 10px;
+}
+.p2{
+    position: relative;
+    left: 150px;
+    color: #fff;
+    font-size: 12px;
+}
+.btn1{
+    background-color: cadetblue;
+    position: relative;
+    top: 70px; 
+    left: 135px;
+    padding-top: 6px;
+padding-bottom: 6px;
+padding-top: 6px;
+padding-bottom: 6px;
+padding-left: 20px;padding-right: 20px;
+border-radius: 4px;
+
+    
+    
+}
+.ins{
+    position: relative;
+    top: 150px;
+    left: 80px;
+    color: #fff;
+    font-size: 12px;
+}
+.login a{
+    text-decoration: none;
+}
+.singupform{
+    height: 500px;width: 350px;
+     position: relative;
+     left: 450px;
+     top: 100px;
+     bottom: 100px;
+     border: 1px solid black;
+     background-image: url(https://www.alll.com/wp-content/uploads/2019/01/signup-background2-1024x576.jpg);
+     border-radius: 10px;
+}
+ .singupform img{
+    height: 40px;
+    width: 150px;
+    position: relative;
+    left: 100px;
+   margin-top: 6px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.singupform h1{
+    align-items: center; display: flex; justify-content: center;
+    padding-top: 20px;
+    font-size: 30px;
+    color: wheat;
+}
+.singupform input{
+    position: relative;
+    left: 50px;
+    top: 50px;
+    margin: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 80px;
+  border-radius: 50px;
+  border:none;
+  }
+  .singupform button{
+    background-color: cadetblue;
+    position: relative;
+    top: 110px; 
+    left: 120px;
+    padding-top: 6px;
+padding-bottom: 6px;
+padding-top: 6px;
+padding-bottom: 6px;
+padding-left: 30px;padding-right: 30px;
+border-radius: 4px;
+
+    
+    
+}
+.singupform a{
+    text-decoration: none;
+}
+.btn2{
+    position: relative;
+    left: 110px;
+    top: 70px; 
+    padding: 6px 10px 6px 10px;
+    background: red;
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+.forget{
+    height: 500px;width: 350px;
+    position: relative;
+    left: 450px;
+    top: 100px;
+    bottom: 100px;
+    border: 1px solid black;
+    background-image: url(https://www.alll.com/wp-content/uploads/2019/01/signup-background2-1024x576.jpg);
+    border-radius: 10px;
+    
+}
+.forget h1{
+    align-items: center; display: flex; justify-content: center;
+    padding-top: 20px;
+    font-size: 30px;
+    color: wheat;
+}
+.forget img{
+    height: 50px;
+    width: 150px;
+    position: relative;
+    left: 100px;
+   margin-top: 6px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.forget input{
+     position: relative; 
+    left: 50px;
+    top: 50px;
+    margin: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+   padding-left: 5px; 
+   padding-right: 80px;  
+  border-radius: 50px;
+  border:none;
+  }
+  .upbtn{
+     position: relative;
+     top: 70px;
+     left: 130px;
+     padding: 6px 10px 6px  10px;
+     background-color: cadetblue;
+     border-radius: 20px;
+     border: none;
+  }
+  #err{
+     
+      position: relative;
+      top: 60px;
+      left: 60px;
+      color:black;
+      font-size: 15px;
+  }
+  #err1{
+     
+    position: relative;
+    top: 60px;
+    left: 15px;
+    color:black;
+    font-size: 15px;
+}
+.card3_contener{
+
+display: flex;
+background-color:rgb(241,233,228) ;
+width: 50%;
+
+}
+#pp1{
+   
+    position: relative;
+    top: 25px;
+    left: 20px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+#pp2{
+    position: relative;
+    top: 35px;
+    left: 20px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+#pp3{
+    position: relative;
+    top: 70px;
+    left: 20px;
+    font-size: 22px;
+    font-weight: bold; 
+}
+#pp4{
+    position: relative;
+    top: 70px;
+    left: 20px;
+    font-size: 12px;
+    font-weight: lighter;
+    color:rgb(70,187,254);
+}
+.c3{
+    display: flex;
+}
+.btn3{
+    display: flex;
+    position: relative;
+    top: 125px;
+    gap: 50px;
+    left: 20px;
+}
+#bt3{
+    padding: 6px 20px 6px 20px;
+    background-color: red;
+    border-radius: 20px;
+    font-size: 20px;
+
+}

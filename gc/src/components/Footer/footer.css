@@ -1,0 +1,45 @@
+.footer h1{
+    position: relative;
+    left: 300px;
+    font-size: 3rem;
+    padding-top: 100px;
+    bottom: 20px;
+    align-items: center;
+   
+    
+}
+.footer .p1{
+   
+   align-items: center;
+   justify-content: center;
+   margin-left: 250px;
+
+}
+.footer .p2{
+    margin-left: 270px;
+}
+.foto{
+   position: relative;
+   left: 400px;
+    gap: 10px;
+    margin: 10px;
+}
+.f1 ul {
+   
+    gap: 10px;
+    color: #000;
+    margin-left: 270px;
+    padding: 20px;
+    
+}
+.first{
+   
+    display: flex;
+}
+.first h2{
+    padding: 20px;
+}
+.aab{
+   align-items: center;
+   display: flex;
+}
