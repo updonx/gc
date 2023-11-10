@@ -5,12 +5,12 @@ import  { useEffect, useState } from "react"
 import Card from "../Card";
 import Footer from "../Footer/Footer";
 import TrendingSong from "../cards/Trendingsong";
-import H from "../cards/H";
-import Aftercard from "../Songs/Aftercard";
 
 
 
-function Home() {
+
+
+function Home(props) {
     const [ popularMovies, setPopularMovies ] = useState([])
     useEffect(() => {
     fetch('https://academics.newtonschool.co/api/v1/music/song', {
@@ -53,10 +53,14 @@ const responsive = {
         }
         
       </Carousel>
-      <H/>
-      <TrendingSong/>
+      <div className="h">
+       <div className="tr">
+       <h5>Trending song</h5>
+       </div>
+    </div>
+      <TrendingSong setid={props.setid}/>
      
-      {/* <Aftercard/> */}
+   
      
 <Footer/>
     </>

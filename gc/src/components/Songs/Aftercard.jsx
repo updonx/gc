@@ -1,54 +1,55 @@
-import Card3 from "./Card3";
+
 import { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Card from "../Card";
+import { Link } from "react-router-dom";
 
-function Aftercard() {
-  const [card31, setCard31] = useState([]);
+function Aftercard(props) {
+  console.log(props.id)
+  const [cardinfo, setCardinfo] = useState([]);
 
   useEffect(() => {
-    fetch('https://academics.newtonschool.co/api/v1/music/album', {
+    fetch('https://academics.newtonschool.co/api/v1/music/album/:id'+ props.id, {
       headers: {
         'projectId': '92m3t6amyypy'
       }
-    })
+  })
     .then(res => res.json())
-    .then(data => setCard31(data.data));
-  }, []);
+    .then(data =>{setCardinfo (data.data);console.log(data.data)});
+  }, [props.id]);
 
-  const responsive = {
-    superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 1
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1
-    }
-  };
+ 
   return (
     <>
-      <Carousel responsive={responsive}>
-        <Card3 />
-        {card31?.map((music, key) => (
-          <Card
-            key={key}
-            img={music.image}
-            title={music.title}
-            artists={music.artists}
-            id={music._id}
-          />
-        ))}
-      </Carousel>
+  <div className="card3_contener">
+       <div className="img3"> 
+        <img src={`
+"https://newton-project-resume-backend.s3.amazonaws.com/thumbnai ? cardinfo.backdrop_path:""`}/> 
+       
+       </div>
+       <div className="content3">
+           <p id="pp1">{props.title}</p>
+        
+           <h1 id="pp3">Udd Jaa Kaale Kaava From "Ga...</h1>
+           <div className="c3">
+            {/* <Link><p id="pp4">Udd Jaa Kaale Kaava .2023 .4 min 48 sec</p></Link> */}
+            <p id="pp4">Udd Jaa Kaale Kaava </p><br />
+            <p id="pp4"><span>.</span>2023 </p> 
+             <p id="pp4">4 min 48 sec </p>
+
+          
+           </div>
+           <div className="btn3">
+
+           <button id="bt3">Play Song</button>
+           <img src="https://cdn.icon-icons.com/icons2/1112/PNG/512/likeheartcircularoutlinedbutton_79272.png" height={40} width={40} />
+          <Link to="/Singup"> <img src="https://cdn.onlinewebfonts.com/svg/img_280039.png" height={40} width={40}/></Link>
+           </div>
+       </div>
+       </div>
+       
+    
     </>
   );
   

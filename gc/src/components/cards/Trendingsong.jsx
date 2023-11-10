@@ -7,7 +7,7 @@ import Trendingcard from "./Trendingcard";
 
 
 
-function TrendingSong() {
+function TrendingSong({setid}) {
     const [trendingsong, setTrendingsong] = useState([]);
 
     useEffect(() => {
@@ -46,7 +46,7 @@ function TrendingSong() {
             
             trendingsong.map((music,key)=>{
                 return(
-                    <Trendingcard key={key}img={music.image} title={music.title} id={music._id}/>
+                    <Trendingcard  setId={setid}key={key}img={music.image} title={music.title} id={music._id}/>
                 )
 
             }) 

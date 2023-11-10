@@ -1,12 +1,13 @@
-import { Link } from "react-router-dom";
+
+import { Link } from 'react-router-dom';
 
 function Trendingcard(props) {
-    console.log(props);
-    // console.log(props.id);
+    console.log(props.id);
+
     return (
         <>
-            <Link to={`/card3?songid=${props.id}`}>
-                <div className="trndingcard_container">
+            <Link to={`/card3`} onClick={() => {props.setid(props.id)}}>
+                <div className="trendingcard_container">
                     <div className="img">
                         <div className="img123">
                             <img src={props.img} height={200} width={200} alt="" />
