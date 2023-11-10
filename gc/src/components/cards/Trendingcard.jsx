@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Trendingcard(props) {
     console.log(props.id);
+    // wel com 
 
     return (
         <>
